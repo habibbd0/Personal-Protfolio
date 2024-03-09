@@ -45,6 +45,7 @@ main {
 }
 .header-container .profile-page .protfolio-image {
 	text-align: center;
+	/* overflow: hidden; */
 }
 .header-container .profile-page .protfolio-image img {
 	width: 230px;
@@ -52,6 +53,11 @@ main {
 	border-radius: 50%;
 	border: .25rem solid var(--main-color);
 	margin: 10px 0;
+	transition: .5s all ease;
+	cursor: pointer;
+}
+.header-container .profile-page .protfolio-image:hover img{
+	transform: scale(1.1);
 }
 .header-container .profile-page .protfolio-image h1 {
 	font-size: 1.6rem;
@@ -128,6 +134,22 @@ main {
 .header-container .profile-page .protfolio-details .btn-box .contact-me:hover {
 	background: var(--main-color);
 	color: var(--white-color);
+}
+
+/*===================== education =================== */
+.education {
+	margin: 50px 0;
+}
+.education-container {
+	width: 80%;
+	margin: auto;
+	background-color: #000;
+	border-radius: 10px;
+	padding: 20px 40px;
+}
+.education-container .education-box {
+	display: flex;
+	grid-template-columns: repeat(300px, 1fr);
 }
 
 

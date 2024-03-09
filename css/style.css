@@ -137,7 +137,7 @@ main {
 }
 
 /*===================== education =================== */
-.education {
+#education {
 	margin: 50px 0;
 	position: relative;
 }
@@ -153,7 +153,7 @@ main {
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 1rem;
 }
-.education button {
+#education button {
 	position: absolute;
 	padding: 5px 10px;
 	background-color: #383838;
@@ -174,6 +174,9 @@ main {
 	border-radius: 10px;
 	cursor: pointer;
 	border: 1px solid cyan;
+}
+.education-container .education-box .education-contant:hover {
+	transform: scale(1.05);
 }
 .education-container .education-box .education-contant h3 {
 	margin: 5px 0;
@@ -215,6 +218,10 @@ position: relative;
 	border-radius: 10px;
 	cursor: pointer;
 	border: 1px solid cyan;
+
+}
+#service .service-container .services-box .services-content:hover {
+	transform: scale(1.05);
 }
 #service .service-container .services-box .services-content i {
 	font-size: 35px;
@@ -229,4 +236,8 @@ position: relative;
 	margin-top: 10px;
 	color: white;
 	font-weight: 500;
+}
+#service .service-container .services-box .services-content .btn:hover {
+	background-color: #00abf0;
+	color: black;
 }

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--bg-color:#081b29;
+	--main-color:#00abf0;
+	--text-color:#333;
+	--second-text-color:#555;
+	--white-color:#fff;
+	--cover-color:linear-gradient(45deg, #00abf0,#006e9a);
+	--pages-color:linear-gradient(90deg, #fff,#ddd);
+	--border:.125rem solid #00abf0;
+	--box-shadow:0 0 .6rem rgba(0,0,0,.2);
+}
+
+main {
+	width: 100%;
+	background-color: rgb(32, 32, 32);
+	color: #00abf0;
+	padding: 50px 0;
+}
+
+.header-container {
+	width: 80%;
+	margin: auto;
+	background-color: #000;
+	padding-top: 50px;
+	border-radius: 10px;
+}
+.header-container .profile-page {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	gap: 2rem;
+	/* align-items: center; */
+}
+.header-container .profile-page .protfolio-image {
+	text-align: center;
+}
+.header-container .profile-page .protfolio-image img {
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	border: .25rem solid var(--main-color);
+	margin: 10px 0;
+}
+.header-container .profile-page .protfolio-image h1 {
+	font-size: 1.6rem;
+	line-height: 1.5rem;
+	margin-top: 5px;
+}
+/* .header-container .profile-page .protfolio-image h3 {
+	font-size: 1.5rem;
+	color: var(--main-color);
+	margin-top: 5px;
+} */
+.header-container .profile-page .protfolio-image .social-media {
+	margin: 0rem 0 .8rem;
+}
+.header-container .profile-page .protfolio-image .social-media i {
+	transition: .1s all ease;
+}
+.header-container .profile-page .protfolio-image .social-media a{
+	display: inline-flex;
+	width: 2.5rem;
+	height: 2.5rem;
+	background: transparent;
+	border: var(--border);
+	border-radius: 50%;
+	font-size: 1.3rem;
+	color:var(--main-color);
+	align-items: center;
+	justify-content: center;
+	margin: 0.2rem;
+	transition: .5s all ease;
+}
+.header-container .profile-page .protfolio-image .social-media a:hover {
+	background: var(--main-color);
+	color: var(--white-color);
+	transform: rotate(360deg);
+}
+.header-container .profile-page .protfolio-details {
+	margin-top: 20px;
+}
+.header-container .profile-page .protfolio-details span {
+	font-size: 32px;
+}
+.header-container .profile-page .protfolio-details pre {
+	font-size: 25px;
+	margin-top: -10px;
+	margin-bottom: -25px;
+}
+.header-container .profile-page .protfolio-details .btn {
+	display: inline-flex;
+	width: 9.5rem;
+	height: 3rem;
+	background: var(--main-color);
+	border: var(--border);
+	border-radius: .3rem;
+	font-size: 1.1rem;
+    margin: 10px;
+	align-items: center;
+	justify-content: center;
+	color: var(--white-color);
+	font-weight: 600;
+	transition: .5s all ease;
+}
+.header-container .profile-page .protfolio-details .btn:hover {
+	background: transparent;
+	color: var(--main-color);
+}
+.header-container .profile-page .protfolio-details .btn-box {
+	margin-top: 20px;
+}
+.header-container .profile-page .protfolio-details .btn-box .contact-me {
+	background: transparent;
+	color: var(--main-color);
+}
+.header-container .profile-page .protfolio-details .btn-box .contact-me:hover {
+	background: var(--main-color);
+	color: var(--white-color);
+}
+
+
+
+
+

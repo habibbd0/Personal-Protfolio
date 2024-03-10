@@ -19,7 +19,7 @@
 	--white-color:#fff;
 	--cover-color:linear-gradient(45deg, #00abf0,#006e9a);
 	--pages-color:linear-gradient(90deg, #fff,#ddd);
-	--border:.125rem solid #00abf0;
+	--border:.125rem solid cyan;
 	--box-shadow:0 0 .6rem rgba(0,0,0,.2);
 }
 
@@ -27,7 +27,8 @@ main {
 	width: 100%;
 	background-color: rgb(32, 32, 32);
 	color: #00abf0;
-	padding: 50px 0;
+	padding-top: 50px;
+	position: relative;
 }
 
 .header-container {
@@ -64,11 +65,6 @@ main {
 	line-height: 1.5rem;
 	margin-top: 5px;
 }
-/* .header-container .profile-page .protfolio-image h3 {
-	font-size: 1.5rem;
-	color: var(--main-color);
-	margin-top: 5px;
-} */
 .header-container .profile-page .protfolio-image .social-media {
 	margin: 0rem 0 .8rem;
 }
@@ -139,7 +135,7 @@ main {
 /*===================== education =================== */
 #education {
 	margin: 50px 0;
-	position: relative;
+	/* position: relative; */
 }
 .education-container {
 	width: 80%;
@@ -174,6 +170,7 @@ main {
 	border-radius: 10px;
 	cursor: pointer;
 	border: 1px solid cyan;
+	/* box-shadow: var(--box-shadow); */
 }
 .education-container .education-box .education-contant:hover {
 	transform: scale(1.05);
@@ -183,10 +180,7 @@ main {
 }
 
 /* ==========service ========= */
-#service {
-position: relative;
 
-}
 #service .service-container {
 	width: 80%;
 	margin: auto;
@@ -240,4 +234,118 @@ position: relative;
 #service .service-container .services-box .services-content .btn:hover {
 	background-color: #00abf0;
 	color: black;
+}
+
+/*============ my skilss ============= */
+#font-end {
+	margin-top: 50px;
+}
+#font-end .skills-container {
+	width: 80%;
+	margin: auto;
+	background-color: #0a0a0a;
+	border-radius: 10px;
+	padding: 40px;
+}
+#font-end button {
+	position: absolute;
+	padding: 5px 10px;
+	background-color: #383838;
+	color: #00abf0;
+	font-size: 16px;
+	border-radius: 10px;
+	font-weight: 600;
+	margin-top: -20px;
+	margin-left: 180px;
+	cursor: pointer;
+}
+#font-end .skills-container .skills-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1.5rem;
+}
+#font-end .skills-container .skills-content span {
+	text-align: center;
+	background-color: #272727;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 1px solid cyan;
+	/* display: flex; */
+}
+#font-end .skills-container .skills-content span:hover {
+    transform: scale(1.07);
+}
+#font-end .skills-container .skills-content span i {
+	font-size: 52px;
+}
+#font-end .skills-container .skills-content span p {
+	font-size: 26px;
+}
+/* dev tools  */
+#dev-tools {
+	margin-top: 50px;
+}
+#dev-tools .skills-container {
+	width: 80%;
+	margin: auto;
+	background-color: #0a0a0a;
+	border-radius: 10px;
+	padding: 40px;
+}
+#dev-tools button {
+	position: absolute;
+	padding: 5px 10px;
+	background-color: #383838;
+	color: #00abf0;
+	font-size: 16px;
+	border-radius: 10px;
+	font-weight: 600;
+	margin-top: -20px;
+	margin-left: 180px;
+	cursor: pointer;
+}
+#dev-tools .skills-container .skills-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1.5rem;
+}
+#dev-tools .skills-container .skills-content span {
+	text-align: center;
+	background-color: #272727;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 1px solid cyan;
+	/* display: flex; */
+}
+#dev-tools .skills-container .skills-content span:hover {
+    transform: scale(1.07);
+}
+#dev-tools .skills-container .skills-content span i {
+	font-size: 52px;
+}
+#dev-tools .skills-container .skills-content span p {
+	font-size: 26px;
+}
+#footer-section {
+    margin-top: 20px;
+}
+#footer-section .footer-container {
+	width: 80%;
+	margin: auto;
+	background-color: #0a0a0a;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+}
+#footer-section .footer-container a {
+	font-size: 20px;
+	color: var(--main-color);
+}
+#footer-section .footer-container i {
+	color: red;
+}
+#footer-section .footer-container a:hover {
+	border-bottom: 1px solid var(--main-color);
 }

@@ -37,7 +37,6 @@ main {
 	/* z-index: 9999; */
 	background-color: rgb(32, 32, 32);
 	/* position: fixed; */
-	
 }
 #navbar .navbar-container {
 	width: 80%;
@@ -47,8 +46,50 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 	align-items: center;
 	text-align: center;
+	border-radius: 10px;
 	/* padding-bottom: 50px; */
 	
+}
+#navbar .navbar-container .coder-name h1 {
+	font-size: 28px;
+	color: #00abf0;
+	font-weight: 600;
+}
+#navbar .navbar-container .coder-name h1::first-letter {
+	font-size: 50px;
+	font-style: italic;
+	text-shadow: 2px 2px 10px red;
+}
+#navbar .navbar-container .navbar-contant ul {
+	display: flex;
+	gap: 2rem;
+}
+#navbar .navbar-container .navbar-contant ul li a {
+	color: #00abf0;
+	font-size: 20px;
+	background-color: #2b2a2a;
+	padding: 5px 13px;
+	border-radius: 30px;
+	font-weight: 500;
+}
+#navbar .navbar-container .navbar-contant ul li a:hover {
+	color: #fff;
+	background-color: #00abf0;
+}
+#navbar .navbar-container .navbar-icon ul {
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+}
+#navbar .navbar-container .navbar-icon ul li i {
+	font-size: 25px;
+	background-color: #383838;
+	padding: 5px;
+	border-radius: 50px;
+}
+#navbar .navbar-container .navbar-icon ul li i:hover {
+	color: #fff;
+	background-color: #00abf0;
 }
 .header-container {
 	width: 80%;

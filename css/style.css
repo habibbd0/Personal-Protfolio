@@ -28,26 +28,27 @@ main {
 	width: 100%;
 	background-color: rgb(32, 32, 32);
 	color: #00abf0;
-	/* padding-top: 50px; */
-	position: relative;
+	/* padding-top: 10px; */
+	/* position: relative; */
 }
 #navbar {
 	width: 100%;
-	margin-bottom: 50px;
-	/* z-index: 9999; */
+	margin-bottom: 30px;
+	z-index: 9999;
 	background-color: rgb(32, 32, 32);
 	/* position: fixed; */
+	
 }
 #navbar .navbar-container {
 	width: 80%;
 	margin: auto;
 	background-color: #0a0a0a;
-	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    display: flex;
+	justify-content: space-around;
 	align-items: center;
 	text-align: center;
 	border-radius: 10px;
-	/* padding-bottom: 50px; */
+	/* padding-top: 50px; */
 	
 }
 #navbar .navbar-container .coder-name h1 {
@@ -81,13 +82,14 @@ main {
 	gap: 1.5rem;
 	align-items: center;
 }
-#navbar .navbar-container .navbar-icon ul li i {
+#navbar .navbar-container .navbar-icon ul li a i  {
 	font-size: 25px;
 	background-color: #383838;
-	padding: 5px;
+	padding: 6px 7px;
 	border-radius: 50px;
+	color: #00abf0;
 }
-#navbar .navbar-container .navbar-icon ul li i:hover {
+#navbar .navbar-container .navbar-icon ul li a i:hover {
 	color: #fff;
 	background-color: #00abf0;
 }
@@ -97,7 +99,6 @@ main {
 	background-color: #0a0a0a;
 	padding-top: 50px;
 	border-radius: 10px;
-	z-index: -1;
 }
 .header-container .profile-page {
 	width: 80%;
